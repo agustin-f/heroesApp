@@ -1,8 +1,45 @@
 <p>layout-page works!</p>
 
-<div class="grid p-3">
-    <div class="col-12 mt-5 md:col-6 md:col-offset-3 md:mt-8">
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="push" [ngStyle]="{width: '250px'}">
+        <mat-toolbar>
+            <span>Menú</span>
+            <span class="spacer"></span>
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <mat-list-item 
+              *ngFor="let item of sideavItems"
+              [routerLink]="item.url"
+              (click)="sidenav.toggle()"
+              >
+              <mat-icon matListItemIcon>{{item.icon}}</mat-icon>
+              {{item.label}}
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span class="spacer"></span>
+        <button mat-button>logout</button>
+    </mat-toolbar>
+
+    <div class="container">
         <router-outlet></router-outlet>
     </div>
-</div>
+    
+</mat-sidenav-container>
+
+
+
+
+
+
 
