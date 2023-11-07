@@ -1,3 +1,3 @@
 export const enviroments = {
-    baseURL: 'https://heroesapp.com/home/apiexample'
+    baseURL: 'http://heroesapp.com/home/apiexample'
 }
