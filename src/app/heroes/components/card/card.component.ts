@@ -13,7 +13,7 @@ export class CardComponent implements OnInit {
   public hero!:Hero;
 
   ngOnInit(): void {
-    if(!this.hero) throw Error ('Method not implemented');
+    if(!this.hero) throw Error ('Hero property is required');
   }
 
 }
