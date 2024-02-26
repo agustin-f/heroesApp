@@ -20,26 +20,53 @@
 
             <mat-card-header class="card-header">
                 <mat-card-title>Información</mat-card-title>
-                <mat-card-subtitle>{{hero.superhero}}</mat-card-subtitle>
+                <mat-card-subtitle>Se muestra Información ampliada acerca del superheroe</mat-card-subtitle>
             </mat-card-header>
 
            <mat-card-content>
 
                 <mat-list>
-                    <mat-list-item> {{hero.first_appearance}} </mat-list-item>
-                    <mat-list-item> {{hero.characters}} </mat-list-item>
-                    <mat-list-item> {{hero.publisher}} </mat-list-item>
-                    <mat-list-item> {{hero.alter_ego}} </mat-list-item>
+
+                    <mat-card class="card-info-heroe">
+                        <mat-card-title>Nombre</mat-card-title>
+                        <mat-card-content>{{hero.superhero}}</mat-card-content>
+                    </mat-card>
+
+                    <mat-card class="card-info-heroe">
+                        <mat-card-title>Apariencia</mat-card-title>
+                        <mat-card-content>{{hero.first_appearance}}</mat-card-content>
+                    </mat-card>
+
+                    <mat-card class="card-info-heroe">
+                        <mat-card-title>Personajes</mat-card-title>
+                        <mat-card-content>{{hero.characters}}</mat-card-content>
+                    </mat-card>
+
+                    <mat-card class="card-info-heroe">
+                        <mat-card-title>Publicación</mat-card-title>
+                        <mat-card-content>{{hero.publisher}}</mat-card-content>
+                    </mat-card>
+
+                    <mat-card class="card-info-heroe">
+                        <mat-card-title>Alter Ego</mat-card-title>
+                        <mat-card-content>{{hero.alter_ego}}</mat-card-content>
+                    </mat-card>
+
+
                 </mat-list>
 
-                <button 
-                  mat-button
-                  color="primary"
-                  (click)="goBack()"
-                  class="button"
-                  >
-                    Regresar
-                </button>
+
+                <div class="button-container">
+                    <button 
+                    mat-button
+                    color="primary"
+                    (click)="goBack()"
+                    class="button"
+                    >
+                      Regresar
+                  </button>
+                </div>
+           
 
            </mat-card-content>
 

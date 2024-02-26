@@ -5,6 +5,20 @@
    min-height: 700px;
 }
 
+
+
+.button-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.card-info-heroe{
+    margin: 2%;
+    background-color:cornsilk;
+    padding: 15px;
+}
+
 .card-style{
     background-color: black;
     padding: 10%;
