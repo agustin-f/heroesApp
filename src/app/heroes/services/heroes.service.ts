@@ -28,11 +28,11 @@ export class HeroesService {
     }
 
 
-    addHeroe(hero:Hero):Observable<hero>{
+    addHeroe(hero:Hero):Observable<Hero>{
         return this.http.post<Hero>(`${this.baseURL}/heroes`,hero);
     }
 
-    updateHeroe(hero:Hero):Observable<hero>{
+    updateHeroe(hero:Hero):Observable<Hero>{
         if(!hero.id)throw Error('Hero id is required');
         return this.http.patch<Hero>(`${this.baseURL}/heroes/${hero.id}`,hero);
     }
