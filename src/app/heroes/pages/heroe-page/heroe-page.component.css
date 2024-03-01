@@ -15,34 +15,31 @@
 
 .card-info-heroe{
     margin: 2%;
-    background-color:cornsilk;
     padding: 15px;
 }
 
 .card-style{
-    background-color: black;
     padding: 10%;
     border-radius: 16px;
+    border: 1px solid black;
 }
 
 .card-style-info{
-    background-color:beige;
     padding: 10%;
     border-radius: 16px;
-    border: 1px solid #673ab7;
+    border: 1px solid black;
 }
 
 .card-header{
-    background-color:aqua;
     border: 1px solid black;
     border-radius: 8px;
     padding: 5%;    
+    background-color: aliceblue;
 }
 
 .image-heroe{
     margin-top: 10px;
     padding: 10%;
-    background-color:bisque;
     border-radius: 8px;
 }
 
