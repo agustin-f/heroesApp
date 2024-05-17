@@ -6,7 +6,7 @@
 
 <mat-divider class="mb-2"></mat-divider>
 
-<div class="grid">
+<form class="grid" [formGroup]="heroForm" (ngSubmit)="onSubmit()">
     
     <div class="col-12 sm:col-6">
         <mat-card>
@@ -19,6 +19,7 @@
                            matInput 
                            type="text"
                            required
+                           formControlName ="superhero"
                         />
                     </mat-form-field>
 
@@ -28,6 +29,7 @@
                            matInput 
                            type="text"
                            required
+                           formControlName ="alter_ego"
                         />
                     </mat-form-field>
 
@@ -37,6 +39,7 @@
                            matInput 
                            type="text"
                            required
+                           formControlName ="first_appearance"
                         />
                     </mat-form-field>
 
@@ -46,17 +49,32 @@
                            matInput 
                            type="text"
                            required
+                           formControlName ="characters"
                         />
                     </mat-form-field>
 
                     <mat-form-field class="col-12">
                         <mat-label>Creador</mat-label>
-                        <mat-select required>
+                        <mat-select 
+                          required
+                          formControlName ="publisher"
+                        >
                             <mat-option *ngFor="let publisher of publishers" [value]="publisher.id">
                                 {{publisher.desc}}
                             </mat-option>
                         </mat-select>
                     </mat-form-field>
+
+
+    <mat-form-field class="col-12">
+        <mat-label>Alternative image</mat-label>
+        <input 
+           matInput 
+           type="text"
+           required
+           formControlName ="alt_img"
+        />
+    </mat-form-field>
 
                 </div>
 
@@ -73,6 +91,7 @@
                         <button 
                         mat-flat-button
                         color="primary"
+                        (click)="onSubmit()"
                         >
                         <mat-icon>save</mat-icon>
                         Agregar
@@ -87,9 +106,12 @@
     <div class="col-12 sm:col-6">
 
         <mat-card>
-            <img src="" alt="imágen del héroe" mat-card-image>
+            <img [src]="currentHero | heroImage" alt="imágen del héroe" mat-card-image>
         </mat-card>
 
     </div>
 
-</div>
+</form>
+
+
+{{currentHero | json}}
