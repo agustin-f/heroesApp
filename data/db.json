@@ -21,7 +21,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El"
+      "characters": "Kal-El",
+      "alt_img": "https://w0.peakpx.com/wallpaper/222/361/HD-wallpaper-superman-comic-super.jpg"
     },
     {
       "id": "dc-flash",
@@ -168,22 +169,13 @@
       "characters": "Norrin Radd"
     },
     {
-      "id": "pG6vCc8",
-      "superhero": "Juan Perez",
+      "id": "4psgBbO",
+      "superhero": "Heroe de prueba 01",
       "publisher": "MARVEL Comics",
-      "alter_ego": "JOTA",
-      "first_appearance": "Github 2024",
-      "characters": "EL ratos Perez",
-      "alt_img": "https://previews.123rf.com/images/julos/julos1603/julos160300666/77819089-rat%C3%B3n-de-dibujos-animados-con-traje-de-superh%C3%A9roe.jpg"
-    },
-    {
-      "id": "4rkdmAc",
-      "superhero": "Juan Perez",
-      "publisher": "MARVEL Comics",
-      "alter_ego": "JOTA",
-      "first_appearance": "Github 2024",
-      "characters": "EL ratos Perez",
-      "alt_img": "https://previews.123rf.com/images/julos/julos1603/julos160300666/77819089-rat%C3%B3n-de-dibujos-animados-con-traje-de-superh%C3%A9roe.jpg"
+      "alter_ego": "Prueba 01",
+      "first_appearance": "Probando heroes",
+      "characters": "Spiderman 01",
+      "alt_img": "https://w0.peakpx.com/wallpaper/339/224/HD-wallpaper-top-35-best-spiderman-spiderman-portrait-thumbnail.jpg"
     }
   ]
 }
