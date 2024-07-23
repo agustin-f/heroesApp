@@ -5,6 +5,7 @@ import { User } from '../interfaces/user.interface';
 import { Observable, catchError, map, of, tap } from 'rxjs';
 
 @Injectable({providedIn: 'root'})
+
 export class AuthService {
 
     private baseUrl = enviroments.baseURL;
