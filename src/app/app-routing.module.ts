@@ -5,6 +5,8 @@ import { Error404PageComponent } from './shared/pages/error404-page/error404-pag
 import { AuthGuard } from '../app/auth/guards/auth.guard';
 import { PublicGuard } from '../app/auth/guards/public.guard';
 
+import { canActivateGuard, canMatchGuard } from '../app/auth/guards/auth.guard';
+
 
 const routes: Routes = [
   {
@@ -16,8 +18,8 @@ const routes: Routes = [
   {
     path: 'heroes',
     loadChildren: () => import('./heroes/heroes.module').then( m => m.HeroesModule ),
-    canActivate: [ AuthGuard ],
-    canMatch: [ AuthGuard ]
+    canActivate: [ canActivateGuard ],
+    canMatch: [ canMatchGuard ]
   },
   {
     path: '404',
@@ -39,3 +41,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
